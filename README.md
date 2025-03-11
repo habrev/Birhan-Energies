@@ -25,3 +25,23 @@ The main objective of this analysis is to detect changes in Brent oil prices tha
 - **Change Point Detection**: Use statistical models and change point analysis to detect shifts in the oil price time series.
 - **Event Correlation**: Link detected changes in price to specific political or economic events.
 - **Data Sources**: Historical Brent oil price data, geopolitical event data, OPEC policy changes, and global economic sanctions.
+
+BIRHAN-ENERGIES
+│── .github/                
+│   ├── workflows/                 
+│   │   ├── unittest.yml/          
+│── .vscode/
+    ├── settings.json             
+│   ├── src/                 
+│   │   ├── components/      # Reusable React components
+│   │   ├── pages/           # Main pages
+│   │   ├── services/        # API calls
+│   │   ├── styles/          # CSS/SCSS files
+│   ├── public/              # Static assets
+│   ├── package.json         # Frontend dependencies
+│
+│── data/                    # CSV files and datasets
+│── README.md                # Project documentation
+│── .gitignore               # Ignored files
+│── docker-compose.yml       # Docker setup
+
