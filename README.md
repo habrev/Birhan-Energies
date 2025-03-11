@@ -27,32 +27,31 @@ The main objective of this analysis is to detect changes in Brent oil prices tha
 - **Data Sources**: Historical Brent oil price data, geopolitical event data, OPEC policy changes, and global economic sanctions.
 
 ## Project Structure
-├── .github.<br>
-│   └── workflows<br>
+├── .github/<br>
+│   └── workflows/<br>
 │       └── unittest.yaml<br>
-├── .vscode<br>
+├── .vscode/<br>
 │   └── settings.json<br>
-├── DashBoard<br>
-│   └── Flask_server<br>
+├── DashBoard/<br>
+│   └── Flask_server/<br>
 │   |    └── image<br>
 │   |    └── public<br>
 │   |    └── api,py<br>
 ├───|              
-│   └── React_app<br>
+│   └── React_app/<br>
 │       └── public<br>
 │       └── src<br>
 │       └── index.html<br>
 │       └── package.json<br>
-├── notebooks<br>
+├── notebooks/<br>
 │   ├── ARIMA_model.ipynb<br>
 │   ├── change_point_analysis.ipynb<br>
 |   ├── economic_indicator.ipynb<br>
 |   ├── EDA.ipynb<br>
 │   ├── LSTM_Model.ipynb<br>
-│   ├── README.md
-│   
-├──sam  # virtual environment <br>
-├──scripts<br>
+│   ├── README.md 
+├──sam/  # virtual environment <br>
+├──scripts/<br>
 |   ├──__init__.py<br>
 |   ├──ARIMA.py<br>
 |   ├──change_point_analysis.py<br>
