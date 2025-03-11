@@ -25,3 +25,61 @@ The main objective of this analysis is to detect changes in Brent oil prices tha
 - **Change Point Detection**: Use statistical models and change point analysis to detect shifts in the oil price time series.
 - **Event Correlation**: Link detected changes in price to specific political or economic events.
 - **Data Sources**: Historical Brent oil price data, geopolitical event data, OPEC policy changes, and global economic sanctions.
+
+## Project Structure
+├── .github/   # github action workflows <br>
+│   └── workflows/<br>
+│       └── unittest.yaml<br>
+├── .vscode/   # Visual Studio Code-specific settings <br>
+│   └── settings.json<br>
+├── DashBoard/  # interactive dashboard <br>
+│   └── Flask_server/  # backend setup<br>
+│   |    └── image<br>
+│   |    └── public<br>
+│   |    └── api,py<br>
+├───|              
+│   └── React_app/      # frontend setup <br>
+│       └── public<br>
+│       └── src<br>
+│       └── index.html<br>
+│       └── package.json<br>
+├── notebooks/      # Jupyter notebook<br>
+│   ├── ARIMA_model.ipynb<br>
+│   ├── change_point_analysis.ipynb<br>
+|   ├── economic_indicator.ipynb<br>
+|   ├── EDA.ipynb<br>
+│   ├── LSTM_Model.ipynb<br>
+│   ├── README.md <br>
+├──sam/  # virtual environment <br>
+├──scripts/   # Python scripts <br>
+|   ├──__init__.py<br>
+|   ├──ARIMA.py<br>
+|   ├──change_point_analysis.py<br>
+|   ├──LSTM.py<br>
+│   ├─utils.py<br>
+│   
+├── .gitignore<br>
+├──  README.md     # project documentation <br>
+├──  requirements.txt   #python dependencies <br>
+
+## Installation
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/habrev/Birhan-Energies.git
+   cd Birhan-Energies
+2. **Set up Python environment**: Create a virtual environment and activate it:
+   ```bash
+    python -m venv sam
+    source sam/bin/activate  # For Linux/macOS
+    sam\Scripts\activate  # For Windows
+
+2. **Install the required packages**: Install the dependencies from the `requirements.txt` file:
+   ```bash
+    pip install -r requirements.txt
+
+## Contributing
+Contributions to improve this project are welcome. If you'd like to contribute, please fork the repository and submit a pull request.
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.

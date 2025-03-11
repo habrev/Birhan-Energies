@@ -25,7 +25,7 @@ class LSTM_Modelling:
         test_scaled = scaler.transform(test_data.values.reshape(-1, 1))
         
         # Save the fitted scaler for future use
-        joblib.dump(scaler, 'models/scaler.joblib')
+        joblib.dump(scaler, '/content/drive/My Drive/models/scaler.joblib')
 
         # Function to create dataset with time steps
         def create_dataset(data, time_step=1):
@@ -70,7 +70,7 @@ class LSTM_Modelling:
         
         #Save the model in .pkl format
         # Create the folder if it doesn't exist
-        folder_path='models/'
+        folder_path='/content/drive/My Drive/models/'
         if not os.path.exists(folder_path):
             os.makedirs(folder_path)
         

@@ -1,0 +1,6 @@
+div {
+  height: 100vh;        /* Equivalent to h-screen */
+  width: 100%;          /* Equivalent to w-full */
+  background-size: cover;  /* Equivalent to bg-cover */
+  background-position: center; /* Equivalent to bg-center */
+}
