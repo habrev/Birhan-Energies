@@ -27,31 +27,31 @@ The main objective of this analysis is to detect changes in Brent oil prices tha
 - **Data Sources**: Historical Brent oil price data, geopolitical event data, OPEC policy changes, and global economic sanctions.
 
 ## Project Structure
-├── .github/<br>
+├── .github/   # github action workflows <br>
 │   └── workflows/<br>
 │       └── unittest.yaml<br>
-├── .vscode/<br>
+├── .vscode/   # Visual Studio Code-specific settings <br>
 │   └── settings.json<br>
-├── DashBoard/<br>
-│   └── Flask_server/<br>
+├── DashBoard/  # interactive dashboard <br>
+│   └── Flask_server/  # backend setup<br>
 │   |    └── image<br>
 │   |    └── public<br>
 │   |    └── api,py<br>
 ├───|              
-│   └── React_app/<br>
+│   └── React_app/      # frontend setup <br>
 │       └── public<br>
 │       └── src<br>
 │       └── index.html<br>
 │       └── package.json<br>
-├── notebooks/<br>
+├── notebooks/      # Jupyter notebook<br>
 │   ├── ARIMA_model.ipynb<br>
 │   ├── change_point_analysis.ipynb<br>
 |   ├── economic_indicator.ipynb<br>
 |   ├── EDA.ipynb<br>
 │   ├── LSTM_Model.ipynb<br>
-│   ├── README.md 
+│   ├── README.md <br>
 ├──sam/  # virtual environment <br>
-├──scripts/<br>
+├──scripts/   # Python scripts <br>
 |   ├──__init__.py<br>
 |   ├──ARIMA.py<br>
 |   ├──change_point_analysis.py<br>
@@ -59,8 +59,8 @@ The main objective of this analysis is to detect changes in Brent oil prices tha
 │   ├─utils.py<br>
 │   
 ├── .gitignore<br>
-├──  README.md<br>
-├──  requirements.txt <br>
+├──  README.md     # project documentation <br>
+├──  requirements.txt   #python dependencies <br>
 
 ## Installation
 
