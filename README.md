@@ -67,12 +67,12 @@ The main objective of this analysis is to detect changes in Brent oil prices tha
 1. **Clone the repository**:
    ```bash
    git clone https://github.com/habrev/Birhan-Energies.git
-   cd Birhan_Energies
+   cd Birhan-Energies
 2. **Set up Python environment**: Create a virtual environment and activate it:
    ```bash
-    python -m venv .venv
-    source .venv/bin/activate  # For Linux/macOS
-    .venv\Scripts\activate  # For Windows
+    python -m venv sam
+    source sam/bin/activate  # For Linux/macOS
+    sam\Scripts\activate  # For Windows
 
 2. **Install the required packages**: Install the dependencies from the `requirements.txt` file:
    ```bash
