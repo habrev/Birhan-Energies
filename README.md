@@ -26,22 +26,61 @@ The main objective of this analysis is to detect changes in Brent oil prices tha
 - **Event Correlation**: Link detected changes in price to specific political or economic events.
 - **Data Sources**: Historical Brent oil price data, geopolitical event data, OPEC policy changes, and global economic sanctions.
 
-BIRHAN-ENERGIES
-│── .github/                
-│   ├── workflows/                 
-│   │   ├── unittest.yml/          
-│── .vscode/
-    ├── settings.json             
-│   ├── src/                 
-│   │   ├── components/      # Reusable React components
-│   │   ├── pages/           # Main pages
-│   │   ├── services/        # API calls
-│   │   ├── styles/          # CSS/SCSS files
-│   ├── public/              # Static assets
-│   ├── package.json         # Frontend dependencies
-│
-│── data/                    # CSV files and datasets
-│── README.md                # Project documentation
-│── .gitignore               # Ignored files
-│── docker-compose.yml       # Docker setup
+## Project Structure
+├── .github.<br>
+│   └── workflows<br>
+│       └── unittest.yaml<br>
+├── .vscode<br>
+│   └── settings.json<br>
+├── DashBoard<br>
+│   └── Flask_server<br>
+│   |    └── image<br>
+│   |    └── public<br>
+│   |    └── api,py<br>
+├───|              
+│   └── React_app<br>
+│       └── public<br>
+│       └── src<br>
+│       └── index.html<br>
+│       └── package.json<br>
+├── notebooks<br>
+│   ├── ARIMA_model.ipynb<br>
+│   ├── change_point_analysis.ipynb<br>
+|   ├── economic_indicator.ipynb<br>
+|   ├── EDA.ipynb<br>
+│   ├── LSTM_Model.ipynb<br>
+│   ├── README.md
+│   
+├──sam<br>          # virtual environment 
+├──scripts<br>
+|   ├──__init__.py<br>
+|   ├──ARIMA.py<br>
+|   ├──change_point_analysis.py<br>
+|   ├──LSTM.py<br>
+│   ├─utils.py<br>
+│   
+├── .gitignore<br>
+├──  README.md<br>
+├──  requirements.txt <br>
 
+## Installation
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/habrev/Birhan-Energies.git
+   cd Birhan_Energies
+2. **Set up Python environment**: Create a virtual environment and activate it:
+   ```bash
+    python -m venv .venv
+    source .venv/bin/activate  # For Linux/macOS
+    .venv\Scripts\activate  # For Windows
+
+2. **Install the required packages**: Install the dependencies from the `requirements.txt` file:
+   ```bash
+    pip install -r requirements.txt
+
+## Contributing
+Contributions to improve this project are welcome. If you'd like to contribute, please fork the repository and submit a pull request.
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
