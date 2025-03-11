@@ -51,7 +51,7 @@ The main objective of this analysis is to detect changes in Brent oil prices tha
 │   ├── LSTM_Model.ipynb<br>
 │   ├── README.md
 │   
-├──sam<br>          # virtual environment <br>
+├──sam  # virtual environment <br>
 ├──scripts<br>
 |   ├──__init__.py<br>
 |   ├──ARIMA.py<br>
