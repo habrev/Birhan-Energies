@@ -81,16 +81,5 @@ def predict():
     response_data = predictions.to_dict(orient='dict')    
     return jsonify(response_data)
 
-
-
-
-
-
-
-
-
-
-
-
 if __name__ == '__main__':
     app.run(debug=True)
