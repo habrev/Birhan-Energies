@@ -44,12 +44,12 @@ def LSTM_prediction(data,model, scaler,start_date, predict_days=30, time_step=60
 
 
 ###################### ROUTES ################################
-@app.route('/api/time_series', methods=['GET'])
+@app.route('/opec/time-series', methods=['GET'])
 def get_data():
     json_data = df.to_dict(orient='dict')
     return jsonify(json_data)
 
-@app.route('/api/change_point_detection', methods=['GET'])
+@app.route('/opec/change-point-detection', methods=['GET'])
 def get_change_point():
     change_point_dates = [
         '1990-08-06', '1991-01-16', '1997-12-29', '1999-08-09', '2003-12-29', '2004-07-27', 
@@ -63,14 +63,9 @@ def get_change_point():
     data_with_change_points['change_points'] = change_point_dates
     return jsonify(data_with_change_points)
 
-@app.route('/api/corr_matrix', methods=['GET'])
-def get_macro_correlation():
-    macro_df = pd.read_csv('public/merged_with_macroeco_indice.csv')
-    macro_df.set_index("Date", inplace=True)
-    correlation_dict = macro_df.corr().round(2).to_dict(orient='index')
-    return jsonify(correlation_dict)
 
-@app.route('/api/predict', methods=['POST'])
+
+@app.route('/opec/forecast', methods=['POST'])
 def predict():
     data = request.get_json()
     start_date = datetime.strptime(data['start_date'], '%Y-%m-%d')
